@@ -1,0 +1,22 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>productId</td>
+        <td>productName</td>
+        <td>productType</td>
+        <td>productPrice</td>
+        <td>Operation</td>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of product">
+        <td>{{a.productId}}</td>
+        <td>{{a.productName}}</td>
+        <td>{{a.productType}}</td>
+        <td>{{a.productPrice}}</td>
+        <td><button class="btn btn-danger" (click)="deleteProduct(a.productId)">Delete product</button>
+        <button class="btn btn-warning ">Update product</button>
+      </td>
+      </tr>
+    </tbody>
+</table>

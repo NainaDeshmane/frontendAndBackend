@@ -1,0 +1,38 @@
+<p>add-product works!</p>
+<form [formGroup]="ProductForm" (ngSubmit)="onSubmit()">
+    <div class="Container">
+        <div class="text-center text-dark">
+            <h1>Submit product details</h1>
+        </div>
+
+        <div class="from-outlet">
+            <input class="form-control" type="number" formControlName="productId">
+            <label class="form-label">Enter product Id</label>
+
+        </div>
+
+        <div class="from-outlet">
+            <input class="form-control" type="text" formControlName="productName">
+            <label class="form-label">Enter product Name</label>
+
+        </div>
+
+        <div class="from-outlet">
+            <input class="form-control" type="text" formControlName="productType">
+            <label class="form-label">Enter product Type</label>
+
+        </div>
+
+        <div class="from-outlet">
+            <input class="form-control" type="number" formControlName="productPrice">
+            <label class="form-label">Enter product Price</label>
+
+        </div>
+        
+
+    </div>
+    <div class="from-outlet">
+    <button class="btn btn-success"> Submit product </button>
+    </div>
+
+    
